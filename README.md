@@ -1,6 +1,5 @@
 # hermes-test
 
-Test repository for Hermes ops.
+Test repository for testing.
 
 Dites oleh Hermes
-

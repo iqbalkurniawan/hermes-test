@@ -3,11 +3,211 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>hermes-test</title>
+  <title>Hermes Test - CV Online</title>
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPY8M6fr" crossorigin="anonymous">
+  <!-- Bootstrap Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  
+  <style>
+    body {
+      background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+      min-height: 100vh;
+    }
+    
+    .profile-card {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    
+    .profile-image {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #fff;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    
+    .section-title {
+      color: #0d6efd;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #dee2e6;
+      padding-bottom: 0.5rem;
+    }
+    
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 0.75rem 0;
+    }
+    
+    .contact-icon {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #e7f1ff;
+      border-radius: 50%;
+      color: #0d6efd;
+      font-size: 1.25rem;
+    }
+    
+    .btn-primary {
+      background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%);
+      border: none;
+      padding: 0.75rem 2rem;
+      font-weight: 500;
+    }
+    
+    .btn-primary:hover {
+      background: linear-gradient(135deg, #0b5ed7 0%, #0a53be 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(13, 110, 253, 0.3);
+    }
+    
+    @media (max-width: 576px) {
+      .profile-card {
+        margin: 1rem;
+      }
+      
+      .profile-image {
+        width: 120px;
+        height: 120px;
+      }
+    }
+  </style>
 </head>
-<body style="font-family: system-ui, sans-serif; max-width: 40rem; margin: 4rem auto; padding: 0 1rem;">
-  <h1>hermes-test</h1>
-  <p>Hai hai</p>
-  <p>App tes untuk mencoba new-app, caddy-apply, dan deploy-app tanpa menyentuh SimGisi.</p>
+<body class="py-5">
+  <div class="container">
+    <div class="profile-card">
+      <!-- Card Profile -->
+      <div class="card shadow-lg border-0 rounded-4">
+        <div class="card-body p-4 p-md-5">
+          
+          <!-- Hero Section -->
+          <div class="text-center mb-4">
+            <!-- Placeholder image - ganti dengan URL foto kamu -->
+            <img src="https://via.placeholder.com/150/0d6efd/ffffff?text=HT" 
+                 alt="Profile" 
+                 class="profile-image mb-3">
+            
+            <h1 class="display-5 fw-bold text-dark mb-2">Hermes Test</h1>
+            <p class="lead text-primary mb-3">Developer & System Administrator</p>
+            
+            <div class="badge bg-success bg-opacity-10 text-success px-3 py-2 rounded-pill">
+              <i class="bi bi-check-circle me-2"></i>Available for work
+            </div>
+          </div>
+          
+          <!-- Divider -->
+          <hr class="my-4 text-secondary opacity-25">
+          
+          <!-- About Section -->
+          <div class="mb-4">
+            <h3 class="section-title h5">
+              <i class="bi bi-person me-2"></i>About Me
+            </h3>
+            <p class="text-muted">
+              Seorang developer yang berfokus pada sistem dan infrastruktur web. 
+              Mampu bekerja dengan teknologi modern seperti Bootstrap, Python, dan cloud services. 
+              Terbiasa mengelola server VPS dan deployment aplikasi secara efisien.
+            </p>
+          </div>
+          
+          <!-- Contact Section -->
+          <div class="mb-4">
+            <h3 class="section-title h5">
+              <i class="bi bi-envelope me-2"></i>Contact
+            </h3>
+            
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="bi bi-envelope-fill"></i>
+              </div>
+              <div class="flex-grow-1">
+                <strong>Email:</strong><br>
+                <a href="mailto:hermes@example.com" class="text-decoration-none text-primary">hermes@example.com</a>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="bi bi-geo-alt-fill"></i>
+              </div>
+              <div class="flex-grow-1">
+                <strong>Lokasi:</strong><br>
+                Indonesia
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="bi bi-globe"></i>
+              </div>
+              <div class="flex-grow-1">
+                <strong>Website:</strong><br>
+                <a href="#" class="text-decoration-none text-primary">hermes-test.dev</a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Additional Info -->
+          <div class="mb-4">
+            <h3 class="section-title h5">
+              <i class="bi bi-tools me-2"></i>Technical Info
+            </h3>
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <div class="d-flex align-items-center">
+                  <i class="bi bi-code-square text-primary me-2 fs-5"></i>
+                  <span class="text-muted">Bootstrap 5</span>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="d-flex align-items-center">
+                  <i class="bi bi-terminal text-primary me-2 fs-5"></i>
+                  <span class="text-muted">Linux/VPS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- CTA Button -->
+          <div class="text-center mt-4">
+            <a href="mailto:hermes@example.com" class="btn btn-primary btn-lg rounded-pill">
+              <i class="bi bi-send me-2"></i>Hire Me
+            </a>
+          </div>
+          
+        </div>
+        
+        <!-- Footer -->
+        <div class="card-footer bg-white border-0 py-3 text-center text-muted">
+          <small>&copy; 2026 Hermes Test | Made with <i class="bi bi-heart-fill text-danger"></i></small>
+        </div>
+      </div>
+      
+      <!-- Social Links -->
+      <div class="text-center mt-4">
+        <a href="#" class="btn btn-outline-primary me-2" title="GitHub">
+          <i class="bi bi-github"></i>
+        </a>
+        <a href="#" class="btn btn-outline-primary me-2" title="LinkedIn">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="#" class="btn btn-outline-primary" title="Twitter">
+          <i class="bi bi-twitter-x"></i>
+        </a>
+      </div>
+      
+    </div>
+  </div>
+  
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
